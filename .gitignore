@@ -96,6 +96,7 @@ lib/generated_plugin_registrant.dart
 ### Xcode ###
 ## User settings
 xcuserdata/
+*.xcconfig
 
 ## Xcode 8 and earlier
 *.xcscmblueprint
