@@ -38,9 +38,13 @@ dependencies:
   # 데이터 타입 처리를 위한 라이브러리
   dartz: ^0.10.1
   #카카오 로그인
-  kakao_flutter_sdk_user: ^1.9.5
+  kakao_flutter_sdk_auth: ^1.9.6
   # 환경변수 관리
   flutter_dotenv: ^5.2.1
+  # http 통신
+  dio: ^5.7.0
+  # 상태관리
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:
