@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:trip_view/features/auth/data/datasources/auth_data_source.dart';
-import 'package:trip_view/features/auth/data/repositories/%08auth_repository_impl.dart';
+import 'package:trip_view/features/auth/data/repositories/auth_repository_impl.dart';
 import 'package:trip_view/features/auth/domain/repositories/auth_reopository.dart';
 import 'package:flutter/foundation.dart';
 
