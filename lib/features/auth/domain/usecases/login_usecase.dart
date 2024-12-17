@@ -1,7 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:trip_view/core/errors/failure.dart';
+import 'package:trip_view/core/network/response_model.dart';
+import 'package:trip_view/features/auth/domain/entities/user.dart';
 
-import '../entities/user.dart';
 import '../repositories/auth_reopository.dart';
 
 enum LoginMethod {
@@ -14,7 +15,7 @@ class LoginUseCase {
 
   LoginUseCase(this.repository);
 
-  Future<Either<Failure, User>> call(LoginMethod method) async {
+  Future<Either<Failure, ApiResponse<User>>> call(LoginMethod method) async {
     switch (method) {
       case LoginMethod.kakao:
         return await repository.signInWithKakao();
