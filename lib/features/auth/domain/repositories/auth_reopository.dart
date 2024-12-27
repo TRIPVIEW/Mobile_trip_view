@@ -8,6 +8,9 @@ abstract class AuthRepository {
   //카카오 로그인
   Future<Either<Failure, ApiResponse<User>>> signInWithKakao();
 
+  //네이버 로그인
+  Future<Either<Failure, ApiResponse<User>>> signInWithNaver();
+
   // 로그아웃
   Future<Either<Failure, void>> signOut();
 }
