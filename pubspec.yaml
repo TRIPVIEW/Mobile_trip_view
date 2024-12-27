@@ -45,6 +45,8 @@ dependencies:
   dio: ^5.7.0
   # 상태관리
   get: ^4.6.6
+  # 네이버 로그인
+  naver_login_sdk: ^1.0.2
 
 dev_dependencies:
   flutter_test:
