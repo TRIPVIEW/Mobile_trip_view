@@ -7,6 +7,7 @@ import '../repositories/auth_reopository.dart';
 
 enum LoginMethod {
   kakao,
+  naver
   // 추후 로그인 프로바이더 추가 시 명시
 }
 
@@ -19,6 +20,8 @@ class LoginUseCase {
     switch (method) {
       case LoginMethod.kakao:
         return await repository.signInWithKakao();
+      case LoginMethod.naver:
+        return await repository.signInWithNaver();
     }
   }
 }

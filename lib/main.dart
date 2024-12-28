@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:kakao_flutter_sdk_auth/kakao_flutter_sdk_auth.dart';
+import 'package:naver_login_sdk/naver_login_sdk.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -8,6 +9,13 @@ void main() {
   KakaoSdk.init(
     nativeAppKey: dotenv.env['KAKAO_NATIVE_APP_KEY'],
     javaScriptAppKey: dotenv.env['KAKAO_JAVASCRIPT_APP_KEY'],
+  );
+
+  NaverLoginSDK.initialize(
+    urlScheme: dotenv.env['NAVER_URL_SCHEME'] ?? '',
+    clientId: dotenv.env['NAVER_CLIENT_ID'] ?? '',
+    clientSecret: dotenv.env['NAVER_CLIENT_SECRET'] ?? '',
+    clientName: dotenv.env['NAVER_CLIENT_NAME'] ?? '',
   );
 
   runApp(const MyApp());

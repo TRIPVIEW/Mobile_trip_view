@@ -13,3 +13,8 @@ class KakaoSignInFailure extends AuthFailure {
 class SignOutFailure extends AuthFailure {
   SignOutFailure(super.message);
 }
+
+// 네이버 로그인 실패
+class NaverSignInFailure extends AuthFailure {
+  NaverSignInFailure(super.message);
+}
